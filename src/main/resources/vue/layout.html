@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <script src="/webjars/vue/2.6.10/dist/vue.min.js"></script>
+    <script src="/scripts/authHelper.js"></script>
+
+    <!--Para que funcione 'inlineFile()', la carpeta/archivo debe estar siempre dentro de la ruta '/vue' en la
+        carpeta 'resources' del proyecto Javalin. Se puede utilizar también con el tag '<script>'-->
+    <style>@inlineFile("/vue/css/styles.css")</style>
+
     @componentRegistration
 
     <title>JavalinVue</title>
@@ -14,6 +20,5 @@
     <script>
         new Vue({el: "#main-vue"});
     </script>
-
 </body>
 </html>

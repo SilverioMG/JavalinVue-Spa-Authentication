@@ -1,0 +1,9 @@
+TODO...
+
+-Cargar el archivo 'style.css' como un recurso estático en vez de con  ''@inline' de Javalin.
+-Los styles de los componentes .vue son globales, creo que no puede haber 2 con el mismo nombre, ver si también pasa con los métodos de los componentes .vue.
+-Cambiar los Roles de un enumerado (Application.Roles) a un Objeto que implemente la interfaz 'RouteRole'.
+-En la clase 'BeanSingletonFactory' utilizar un 'Map' u otra estructura de datos para guardar las instancias singleton de los Beans y eliminar
+ la lógica de Lazy Loading. Que todos los Beans se instancien al iniciar el servicio (y se pueda hacer logging de todos los Beans y detectar fallos en las inyecciones)
+ pero conservando la lógica de singleton. Añadir opción por si en vez de singleton queremos alguna instacia de tipo prototype en un momento determinado.
+-Guardar en la parte frontend la info del Usuario en LocalStorage para que no tenga que escribir el password cada vez que acceda a la página por primera vez.

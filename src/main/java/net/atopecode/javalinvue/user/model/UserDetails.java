@@ -1,4 +1,4 @@
-package net.atopecode.javalinvue.model;
+package net.atopecode.javalinvue.user.model;
 
 public class UserDetails {
 
