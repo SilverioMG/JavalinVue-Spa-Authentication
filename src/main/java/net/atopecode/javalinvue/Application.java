@@ -15,6 +15,8 @@ import net.atopecode.javalinvue.dto.HttpResponse;
 import net.atopecode.javalinvue.user.controller.UserController;
 import net.atopecode.javalinvue.ioc.BeanSingletonFactory;
 import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
@@ -22,7 +24,9 @@ import java.util.Map;
 import java.util.Set;
 
 public class Application {
+    public final static Logger LOGGER = LoggerFactory.getLogger(Application.class);
     public final static int serverPort = 8000;
+
 
     public enum Roles implements RouteRole { USER, ADMIN };
 
@@ -36,6 +40,8 @@ public class Application {
             config.accessManager(Application::configAccessManager);
             config.addStaticFiles("/public", Location.CLASSPATH); //Los archivos dentro de 'resources/public/' se acceden desde el Html con el path '/'.
         }).start(serverPort);
+
+        LOGGER.info("Logging activated...");
 
         //Handler que se ejecuta antes de cada petición Http para recuperar el token del usuario autenticado y añadir
         //su info como 'UserPrincipal' al 'context' de la petición.
