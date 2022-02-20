@@ -1,6 +1,6 @@
 # Web SPA usando JavalinVue Framework: (Autenticación sin 'server sessions' ni 'cookies'. Simulando el enfoque de Auth en una web SPA.)
 
-- Este proyecto es una simple Web SPA utlizando Javalin Framework con VueJS (JavalinVue).
+- Este proyecto es una web SPA utilizando Javalin Framework con VueJS (JavalinVue).
   Frontend y Backend en el mismo servidor.
 - El frontend está implementado con Vuejs (views/componentes), el routing se hace
   en el server (esto es genial) y la seguridad también se hace en el server (tanto
