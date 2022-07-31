@@ -1,4 +1,4 @@
-# Web SPA usando JavalinVue Framework: (Autenticación sin 'server sessions' ni 'cookies'. Simulando el enfoque de Auth en una web SPA.)
+# Web usando JavalinVue para el frontend y Javalin Framework para el backend. Autenticación con token JWT (Sin 'server sessions' ni 'cookies', simulando el enfoque de Auth en una web SPA.)
 
 - Este proyecto es una web SPA utilizando Javalin Framework con VueJS (JavalinVue).
   Frontend y Backend en el mismo servidor.
@@ -6,6 +6,7 @@
   en el server (esto es genial) y la seguridad también se hace en el server (tanto
   para las vistas vuejs como para las peticiones a la api rest se utiliza el mismo mecanismo
   de seguridad).
+- La autenticación y autorización se hace con token JWT.
 
 <br/>
 
